@@ -5,7 +5,7 @@ export class Website extends Container {
 }
 
 interface Env {
-	WEBSITE: DurableObjectNamespace;
+	WEBSITE: DurableObjectNamespace<Website>;
 }
 
 export default {

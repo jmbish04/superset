@@ -18,4 +18,6 @@ COPY --from=base /app /app
 
 EXPOSE 8080
 
-CMD ["bun", "--filter", "@superset/website", "start", "--port", "8080", "--hostname", "0.0.0.0"]
+WORKDIR /app/apps/website
+
+CMD ["bun", "run", "start", "--port", "8080", "--hostname", "0.0.0.0"]
