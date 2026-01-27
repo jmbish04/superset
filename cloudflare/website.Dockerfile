@@ -11,6 +11,7 @@ FROM oven/bun:1.3.0
 
 ENV NODE_ENV=production
 ENV PORT=8080
+ENV HOSTNAME=0.0.0.0
 
 WORKDIR /app
 
@@ -20,4 +21,4 @@ EXPOSE 8080
 
 WORKDIR /app/apps/website
 
-CMD ["bun", "run", "start", "--port", "8080", "--hostname", "0.0.0.0"]
+CMD ["bun", "run", "start"]

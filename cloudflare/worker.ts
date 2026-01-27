@@ -1,4 +1,5 @@
 import { Container } from "cloudflare:containers";
+import type { DurableObjectNamespace } from "cloudflare:workers";
 
 export class Website extends Container {
 	defaultPort = 8080;
