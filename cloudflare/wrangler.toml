@@ -1,0 +1,8 @@
+name = "superset"
+main = "./cloudflare/worker.ts"
+compatibility_date = "2025-01-27"
+
+[[containers]]
+class_name = "Website"
+image = "./cloudflare/website.Dockerfile"
+max_instances = 1
