@@ -11,8 +11,7 @@ interface Env {
 
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
-		const id = env.WEBSITE.idFromName("superset-website");
-		const container = env.WEBSITE.get(id);
+		const container = env.WEBSITE.getByName("superset-website");
 		return container.fetch(request);
 	},
 };
