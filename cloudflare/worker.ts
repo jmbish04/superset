@@ -1,4 +1,4 @@
-import { Container } from "cloudflare:containers";
+import { Container, getContainer } from "cloudflare:containers";
 import type { DurableObjectNamespace } from "cloudflare:workers";
 
 export class Website extends Container {
@@ -11,7 +11,7 @@ interface Env {
 
 export default {
 	async fetch(request: Request, env: Env): Promise<Response> {
-		const container = env.WEBSITE.getByName("superset-website");
+		const container = getContainer(env.WEBSITE, "superset-website");
 		return container.fetch(request);
 	},
 };
