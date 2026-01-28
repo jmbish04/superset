@@ -105,6 +105,10 @@ See the [CONTRIBUTING.md](CONTRIBUTING.md) for instructions and code of conduct.
 
 See tips and motivation under `docs`: [docs/cookbook/README.md](docs/cookbook/README.md).
 
+## Deploy
+
+- Cloudflare Workers (Containers): [docs/deployments/cloudflare-workers.md](docs/deployments/cloudflare-workers.md)
+
 ## Follow Us
 - [![Avi Twitter](https://img.shields.io/badge/Avi-@avimakesrobots-555?logo=x)](https://x.com/avimakesrobots)
 - [![Kiet Twitter](https://img.shields.io/badge/Kiet-@flyakiet-555?logo=x)](https://x.com/flyakiet)

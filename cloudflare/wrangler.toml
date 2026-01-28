@@ -1,0 +1,16 @@
+name = "superset"
+main = "./cloudflare/worker.ts"
+compatibility_date = "2025-01-27"
+
+[[containers]]
+class_name = "Website"
+image = "./cloudflare/website.Dockerfile"
+max_instances = 3
+
+[[durable_objects.bindings]]
+name = "WEBSITE"
+class_name = "Website"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Website"]
